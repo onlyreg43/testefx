@@ -8,6 +8,7 @@ try {
       checkout scm
     }
   }
+}
 
   // Run terraform init
   stage('init') {

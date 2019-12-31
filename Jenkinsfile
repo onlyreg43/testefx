@@ -9,7 +9,6 @@ try {
     }
   }
 }
-
   // Run terraform init
   stage('init') {
     node {
@@ -59,6 +58,7 @@ try {
         }
       }
     }
+  }
 
     // Run terraform show
     stage('show') {
@@ -75,9 +75,8 @@ try {
         }
       }
     }
-  }
   currentBuild.result = 'SUCCESS'
-}
+
 catch (org.jenkinsci.plugins.workflow.steps.FlowInterruptedException flowError) {
   currentBuild.result = 'ABORTED'
 }

@@ -4,7 +4,7 @@ variable "count-1" {
 
 variable "key_name" {
   description = "Private key name to use with instance"
-  default     = "rj-myfirstec2"
+  default     = "rj-tf-region-west2"
 }
 
 variable "instance_type" {

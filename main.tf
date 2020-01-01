@@ -3,13 +3,13 @@ terraform {
   backend "s3" {
     bucket = "terraform-bucket-test-efx1"
     key    = "terraform.tfstate"
-    region = "us-west-2"
+    region = "us-east-2"
   }
 }
 
 # Use AWS Terraform provider
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-2"
 }
 
 # Create EC2 instance

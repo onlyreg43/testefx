@@ -2,11 +2,6 @@ variable "count-1" {
   default = 1
 }
 
-variable "key_name" {
-  description = "Private key name to use with instance"
-  default     = "rj-tf-region-west2"
-}
-
 variable "instance_type" {
   description = "AWS instance type"
   default     = "t2.micro"

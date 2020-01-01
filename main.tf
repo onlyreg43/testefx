@@ -1,7 +1,7 @@
 # Terraform state will be stored in S3
 terraform {
   backend "s3" {
-    bucket = "terraform-bucket-test-efx1"
+    bucket = "terraform-bucket-test-efx"
     key    = "terraform.tfstate"
     region = "us-east-2"
   }

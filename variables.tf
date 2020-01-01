@@ -15,6 +15,6 @@ variable "instance_type" {
 variable "ami" {
   description = "Base AMI to launch the instances"
 
-  # Bitnami Linux AMI
+#Bitnami Linux AMI
   default = "ami-83a713e0"
 }
